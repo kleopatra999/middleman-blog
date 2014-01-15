@@ -145,7 +145,6 @@ module Middleman
         end
 
         params.
-          merge(date_to_params(resource.date)).
           merge(lang: resource.lang.to_s, title: resource.slug).
           merge(extra)
       end
