@@ -181,7 +181,7 @@ module Middleman
           end
         end
 
-        raise "Blog post #{path} needs a date in its filename or frontmatter" unless @_date
+        # raise "Blog post #{path} needs a date in its filename or frontmatter" unless @_date
 
         @_date
       end
