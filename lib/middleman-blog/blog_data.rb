@@ -36,7 +36,7 @@ module Middleman
       # A list of all blog articles, sorted by descending date
       # @return [Array<Middleman::Sitemap::Resource>]
       def articles
-        @_articles.sort_by(&:date).reverse
+        @_articles
       end
 
       # A list of all blog articles with the given language,
