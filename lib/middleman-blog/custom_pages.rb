@@ -35,7 +35,7 @@ module Middleman
       private
 
       def build_resource(path, value, articles)
-        articles = articles.sort_by(&:date).reverse
+        # articles = articles.sort_by(&:date).reverse
         Sitemap::Resource.new(@sitemap, path).tap do |p|
           p.proxy_to(@page_template)
           p.add_metadata locals: {
